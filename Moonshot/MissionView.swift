@@ -32,6 +32,17 @@ struct MissionView: View {
                         .foregroundStyle(.lightBackground)
                         .padding(.vertical)
                     
+                    Text("Launch Date")
+                        .font(.title.bold())
+                        .padding(.bottom, 5)
+                    
+                    Text(mission.longLaunchDate)
+                    
+                    Rectangle()
+                        .frame(height: 2)
+                        .foregroundStyle(.lightBackground)
+                        .padding(.vertical)
+                    
                     Text("Mission Highlights")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/.bold())
                         .padding(.bottom, 5)
