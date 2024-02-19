@@ -23,18 +23,22 @@ struct ListView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 50, height: 30)
+
+                            HStack {
+                                Text(mission.displayName)
+                                Text(mission.abbreviatedLaunchDate)
+                            }
+                            
                         }
-                        
-                        HStack {
-                            Text(mission.displayName)
-                            Text(mission.abbreviatedLaunchDate)
-                        }
+                        .padding(5)
                     }
                 }
+                .listRowBackground(Color.darkBackground)
             }
             .background(.darkBackground)
             .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
         }
+        .listStyle(.plain)
     }
 }
 
