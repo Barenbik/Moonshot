@@ -29,7 +29,9 @@ struct ContentView: View {
             .navigationTitle("Moonshot")
             .toolbar {
                 Button("Toggle View", systemImage: "square.fill.text.grid.1x2") {
-                    showingList = !showingList
+                    withAnimation {
+                        showingList.toggle()
+                    }
                 }
             }
         }
