@@ -28,7 +28,7 @@ struct ContentView: View {
             }
             .navigationTitle("Moonshot")
             .toolbar {
-                Button("Toggle View", systemImage: "square.fill.text.grid.1x2") {
+                Button("Toggle View", systemImage: showingList ? "square.grid.2x2" : "list.bullet" ) {
                     withAnimation {
                         showingList.toggle()
                     }
