@@ -15,28 +15,29 @@ struct ListView: View {
         VStack {
             List {
                 ForEach(missions) { mission in
-                    NavigationLink {
-                        MissionView(mission: mission, astronauts: astronauts)
-                    } label: {
+                    NavigationLink(value: mission) {
                         HStack {
                             Image(mission.image)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 50, height: 30)
-
+                            
                             HStack {
                                 Text(mission.displayName)
                                 Text(mission.abbreviatedLaunchDate)
                             }
-                            
                         }
                         .padding(5)
                     }
                 }
                 .listRowBackground(Color.darkBackground)
             }
+            .navigationDestination(for: Mission.self) { mission in
+                MissionView(mission: mission, astronauts: astronauts)
+            }
             .background(.darkBackground)
             .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+            
         }
         .listStyle(.plain)
     }

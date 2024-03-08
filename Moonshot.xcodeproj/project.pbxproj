@@ -78,19 +78,19 @@
 				3A04C4DE2B713D4E0069ADC8 /* astronauts.json */,
 				3A04C4DF2B713D4F0069ADC8 /* missions.json */,
 				3A04C4E22B713DC80069ADC8 /* Astronaut.swift */,
-				3A1DC04A2B7B9FC800F44FE5 /* AstronautView.swift */,
 				3A04C4E42B713ED70069ADC8 /* Bundle-Decodable.swift */,
 				3A40E7202B7241E200133CEF /* Colour-Theme.swift */,
+				3A1DC04A2B7B9FC800F44FE5 /* AstronautView.swift */,
 				3AD4E1FF2B69702E00DC654F /* ContentView.swift */,
 				3A1DC0522B7D0F7300F44FE5 /* CrewMember.swift */,
 				3A1DC04E2B7BA9B600F44FE5 /* CrewView.swift */,
 				3A4CBCBF2B7F74160074284A /* GridView.swift */,
-				3A04C4E62B7144AB0069ADC8 /* Mission.swift */,
+				3A4CBCC12B7F7B0C0074284A /* ListView.swift */,
 				3A82DD262B73E57C00D0136B /* MissionView.swift */,
+				3A04C4E62B7144AB0069ADC8 /* Mission.swift */,
 				3AD4E1FD2B69702E00DC654F /* MoonshotApp.swift */,
 				3AD4E2012B69703000DC654F /* Assets.xcassets */,
 				3AD4E2032B69703000DC654F /* Preview Content */,
-				3A4CBCC12B7F7B0C0074284A /* ListView.swift */,
 			);
 			path = Moonshot;
 			sourceTree = "<group>";
